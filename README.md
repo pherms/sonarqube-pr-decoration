@@ -22,7 +22,7 @@ jobs:
           with:
             host: ${{ secrets.SONARQUBE_HOST }}
             login: ${{ secrets.SONARQUBE_TOKEN }}
-            ref: ${{ github.REF }}
+            referenceID: ${{ github.REF }}
             projectKey: "MyProjectKey"
         #uses: warchant/setup-sonar-scanner@v1
 
